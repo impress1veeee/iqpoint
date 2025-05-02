@@ -1,0 +1,108 @@
+doctype html 
+html 
+    head
+        meta(charset="UTF-8")
+        title Программы | IQPoint
+        link(rel="stylesheet",href="../styles/style.css")
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        include ../pug/include/header.pug
+        
+    body
+        .body-container 
+            .container-fluid
+                .row.mx-3.mt-3.text-center
+                    .col.mt-5
+                        h3.bigger Подготовка к ЕГЭ по информатике
+                .row.mx-3.mt-1.text-center
+                    .col-3
+                    .col-6.mt-2.px-5
+                        p У нас есть разные программы подготовки. Вы можете выбрать любую, близкую по душе.
+                        button.btn-secondary Записаться на курс
+                    .col-3
+                .divider
+                .row
+                    .col-3 
+                    .col-6
+                        .row
+                            .col.course-desc.mt-5
+                                p.desc-title.pt-4.ps-3 О ЕГЭ по информатике
+                                .divider-small.purp
+                                p.desc-main.px-3.mb-4 Единый государственный экзамен по информатике открывает двери к техническим специальностям. Мы предлагаем три программы подготовки: базовый курс, интенсивный курс и продвинутый курс. Наши программы помогут вам успешно сдать экзамен и поступить в выбранный ВУЗ.
+                            .col
+                                img.img-fluid.course-img(src='../assets/course1.jpg')
+                    .col-3
+                .divider
+                .row.mx-3.text-center
+                    .col.mt-5
+                        h3.bigger Выбери свой путь
+                .row.mx-3
+                    .col-1
+                    .col-10.align-items.center
+                        .row.d-flex.align-items-center.mx-5.mt-5.mb-3
+                            .col.px-5
+                                p.course-title Базовый курс
+                                .divider-small
+                                p.course-description Изучите ключевые темы, отработайте методы решения задач и повысьте уровень своих знаний. Курс поможет вам уверенно чувствовать себя на экзамене.
+                            .col.px-5
+                                img.img-fluid.img-path(src='../assets/path1.jpg')
+                        .row.d-flex.align-items-center.mx-5.mt-5.mb-3
+                            .col.px-5
+                                p.course-title Интенсивный курс
+                                .divider-small
+                                p.course-description Интенсивный курс идеален для тех, кто уже хорошо разбирается в теме и хочет углубить свои знания или повторить все пройденное перед экзаменом за сжатые сроки.
+                            .col.px-5
+                                img.img-fluid.img-path(src='../assets/path2.jpg')
+                        .row.d-flex.align-items-center.mx-5.mt-5.mb-3
+                            .col.px-5
+                                p.course-title Продвинутый курс
+                                .divider-small
+                                p.course-description Продвинутый курс включает в себя персональное тестирование и аналитику. Это помогает отслеживать свой прогресс, находить пробелы в знаниях и изменять учебную траекторию.
+                            .col.px-5
+                                img.img-fluid.img-path(src='../assets/path3.jpg')
+                    .col-1
+                .divider
+                .row.mx-3.text-center
+                    .col.mt-5
+                        h3.bigger Раскрой свой потенциал
+                .row.mx-3.mt-3.text-center
+                    .col-3
+                    .col-6.mt-5
+                        p Наши курсы помогут освоить основы информатики, уверенно сдать ЕГЭ и добиться высоких баллов для поступления в университет мечты.
+                    .col-3
+                .row.mx-3.mt-3
+                    .col-2
+                    .col-8
+                        .table-container.mb-5
+                            .row.mt-5
+                                .col.mx-3
+                                    .row
+                                        .col-1
+                                            img.icon(src="../assets/icon_plansh.svg")
+                                        .col-11
+                                            p.title Разнообразие программ
+                                            p.description Выбирайте между базовым, интенсивным и продвинутым курсом с тестированием и аналитикой.
+                                .col.mx-3
+                                    .row
+                                        .col-1
+                                            img.icon(src="../assets/icon_brain.svg")
+                                        .col-11
+                                            p.title Повышение уверенности
+                                            p.description Вы станете увереннее в своих знаниях и способностях решать сложные задачи.
+                            .row.mt-5
+                                .col.mx-3
+                                    .row
+                                        .col-1
+                                            img.icon(src="../assets/icon_skills.svg")
+                                        .col-11
+                                            p.title Развитие навыков
+                                            p.description Наши курсы помогут вам развить умение анализировать и решать задачи по информатике.
+                                .col.mx-3
+                                    .row
+                                        .col-1
+                                            img.icon(src="../assets/icon_cup.svg")
+                                        .col-11
+                                            p.title Высокие баллы
+                                            p.description Благодаря нашему курсу вы сможете достичь высоких результатов на экзамене по информатике.
+                        .col-2
+    
+    include ../pug/include/footer.pug

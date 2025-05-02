@@ -1,0 +1,83 @@
+doctype html 
+html 
+    head
+        meta(charset="UTF-8")
+        title Тарифы | IQPoint
+        link(rel="stylesheet",href="../styles/style.css")
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        include ../pug/include/header.pug
+        
+    body
+        .body-container 
+            .container-fluid
+                .row.mx-3.mt-3.text-center
+                    .col.mt-5
+                        h3.bigger Стоимость курсов
+                .row.mx-3.mt-3.text-center
+                    .col-3
+                    .col-6.mt-5
+                        p Узнай о прозрачной ценовой политике наших курсов: доступные цены и гибкие варианты оплаты для всех.
+                    .col-3
+                .row.mx-3.mt-3
+                    .col-2
+                    .col-8
+                        .row.mt-5 
+                            .col.mx-4.pricing-container.text-center.py-5
+                                p.tariff.title Базовый курс
+                                p.tariff.description Подходит для тех, кто начинает подготовку с нуля 
+                                p.tariff.description 32 занятия
+                                p.tariff.price 9900₽
+                                p.tariff.description Видеоуроки
+                                p.tariff.description Тестирования для самопроверки
+                                p.tariff.description Консультации с преподавателем
+                            .col.mx-4.pricing-container.text-center.py-5
+                                p.tariff.title Продвинутый курс
+                                p.tariff.description Для тех, кто хочет максимально подготовиться к ЕГЭ
+                                p.tariff.description 52 занятия
+                                p.tariff.price 19900₽
+                                p.tariff.description Видеоуроки
+                                p.tariff.description Тестирования для самопроверки
+                                p.tariff.description Консультации с преподавателем
+                                p.tariff.description Разбор сложных задач
+                            .col.mx-4.pricing-container.text-center.py-5
+                                p.tariff.title Интенсивный курс
+                                p.tariff.description Курс для быстрой подготовки перед экзаменом
+                                p.tariff.description 24 занятия
+                                p.tariff.price 24900₽
+                                p.tariff.description Интерактивные уроки
+                                p.tariff.description Тестирования
+                                p.tariff.description Консультации с преподавателем
+                                p.tariff.description Доступ к доп. материалам
+                    .col-2
+                .divider
+                .row
+                    .col.mt-5.text-center
+                        h3.bigger Подай заявку на следующий поток
+                .row 
+                    .col-4
+                    .col-4
+                        .contact-form
+                            form
+                                .mb-4
+                                    label.form-label(for="name") Имя:
+                                    input#name.form-control(type="text" placeholder="Ваше имя")
+                                .mb-4
+                                    label.form-label(for="number") Номер телефона:
+                                    input#number.form-control(type="text" placeholder="+7")
+                                .mb-4
+                                    label.form-label(for="email") Электронный адрес:
+                                    input#email.form-control(type="text" placeholder="address@mail.com")
+                            .form-check
+                                input.form-check-input#option1(type="checkbox" value="")
+                                label.form-check-label(for="option1") Базовый курс
+                            .form-check
+                                input.form-check-input#option1(type="checkbox" value="")
+                                label.form-check-label(for="option2") Интенсивный курс
+                            .form-check
+                                input.form-check-input#option1(type="checkbox" value="")
+                                label.form-check-label(for="option3") Продвинутый курс
+                            .d-flex.justify-content-center
+                                button.btn-secondary Оставить заявку
+                    .col-4
+    
+    include ../pug/include/footer.pug

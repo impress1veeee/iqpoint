@@ -1,0 +1,118 @@
+doctype html 
+html 
+    head
+        meta(charset="UTF-8")
+        title Кураторы | IQPoint
+        link(rel="stylesheet",href="../styles/style.css")
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        include ../pug/include/header.pug
+        
+    body
+        .body-container 
+            .container-fluid
+                .row.mx-3.mt-3.text-center
+                    .col.mt-5
+                        h3.bigger Наши кураторы
+                .row.mx-3.mt-3.text-center
+                    .col-3
+                    .col-6.mt-5
+                        p Наша команда состоит из опытных специалистов, которые любят своё дело и хотят помочь ученикам добиться успеха.
+                    .col-3
+                .row.mx-3.mt-3
+                    .col-2
+                    .col-8
+                        .row.mt-2 
+                            .col.mx-4.teacher-container.py-5
+                                img.img-fluid.teacher-pic(src="../assets/teacher1.png")
+                                p.mt-4.teacher.name Анна Смирнова
+                                p.teacher.occupation Куратор курса
+                                .divider-small
+                                p.teacher.description Разрабатывает уникальные методики подготовки, делая сложные темы понятными и интересными.
+                            .col.mx-4.teacher-container.py-5
+                                img.img-fluid.teacher-pic(src="../assets/teacher2.png")
+                                p.mt-4.teacher.name Алексей Петров
+                                p.teacher.occupation Куратор курса
+                                .divider-small
+                                p.teacher.description Имеет большой опыт работы с учениками, сдавшими ЕГЭ на 95+ баллов.
+                            .col.mx-4.teacher-container.py-5
+                                img.img-fluid.teacher-pic(src="../assets/teacher3.png")
+                                p.mt-4.teacher.name Анна Смирнова
+                                p.teacher.occupation Куратор курса
+                                .divider-small
+                                p.teacher.description Разрабатывает интерактивные задания и тесты, которые помогают ученикам лучше усвоить материал.
+                        .col-2
+                .divider
+                .row.mx-3.mt-3.text-center
+                    .col.mt-5
+                        h3.bigger Раскройте свой потенциал
+                .row.mx-3.mt-3.text-center
+                    .col-3
+                    .col-6.mt-5
+                        p У нас есть интересные учебные материалы, индивидуальная обратная связь, гибкие варианты обучения и дружелюбное сообщество.
+                    .col-3
+                .row.mx-3.mt-3
+                    .col-2
+                    .col-8
+                        .table-container
+                            .row.mt-5
+                                .col.mx-3
+                                    .row
+                                        .col-1
+                                            img.icon(src="../assets/icon_book.svg")
+                                        .col-11
+                                            p.title Увлекательные учебные материалы
+                                            p.description Наши материалы делают изучение информации интересным и захватывающим процессом.
+                                .col.mx-3
+                                    .row
+                                        .col-1
+                                            img.icon(src="../assets/icon_student.svg")
+                                        .col-11
+                                            p.title Индивидуальная обратная связь
+                                            p.description Каждый ученик получает персонализированные рекомендации и поддержку от куратора.
+                            .row.mt-5
+                                .col.mx-3
+                                    .row
+                                        .col-1
+                                            img.icon(src="../assets/icon_group.svg")
+                                        .col-11
+                                            p.title Гибкие варианты обучения
+                                            p.description Вы можете выбрать удобный формат занятий: онлайн или офлайн, в группе или индивидуально.
+                                .col.mx-3
+                                    .row
+                                        .col-1
+                                            img.icon(src="../assets/icon_timer.svg")
+                                        .col-11
+                                            p.title Практические занятия
+                                            p.description Многочисленные задачи и тесты помогают закрепить знания и подготовиться к экзамену.
+                        .col-2
+                .divider
+                .row.mx-3.mt-1.text-center
+                    .col.mt-5
+                        h3.bigger Оставайся в курсе
+                .row.mx-3.mt-3.text-center
+                    .col-3
+                    .col-6.mt-5
+                        p Читай наш блог, чтобы найти полезные статьи, советы по подготовке к экзаменам и рекомендации, которые помогут тебе в обучении.
+                    .col-3
+                .row.mx-3.mt-3
+                    .col-2
+                    .col-8
+                        .row.mt-5 
+                            .col.mx-4.blog-container.py-5
+                                img.img-fluid.blog-pic(src="../assets/blog1.jpg")
+                                p.mt-4.blog.title Стратегии решения сложных задач
+                                p.blog.description Изучите эффективные подходы к решению задач повышенного уровня сложности.
+                                p.blog.link Подробнее
+                            .col.mx-4.blog-container.py-5
+                                img.img-fluid.blog-pic(src="../assets/blog2.jpg")
+                                p.mt-4.blog.title Типичные ошибки и как их избежать
+                                p.blog.description Узнайте о распространённых ошибках, которые допускают выпускники, и научитесь их избегать.
+                                p.blog.link Подробнее
+                            .col.mx-4.blog-container.py-5
+                                img.img-fluid.blog-pic(src="../assets/blog3.jpg")
+                                p.mt-4.blog.title Полезные ресурсы для подготовки
+                                p.blog.description Подборка сайтов, книг и материалов, которые помогут вам эффективно подготовиться к экзамену.
+                                p.blog.link Подробнее
+                        .col-2
+    
+    include ../pug/include/footer.pug
