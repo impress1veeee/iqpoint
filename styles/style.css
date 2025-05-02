@@ -1,0 +1,412 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css);
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-SemiBold.ttf") format("truetype");
+  font-style: semibold !important;
+  font-weight: 600 !important;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-style: bold !important;
+  font-weight: 900 !important;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Black.ttf") format("truetype");
+  font-style: black !important;
+  font-weight: 1100 !important;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: regular !important;
+  font-weight: 400 !important;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Light.ttf") format("truetype");
+  font-style: light !important;
+  font-weight: 300 !important;
+}
+@font-face {
+  font-family: "Audiowide";
+  src: url("../assets/fonts/Audiowide-Regular.ttf") format("truetype");
+  font-style: regular !important;
+  font-weight: 400 !important;
+}
+html, body, head {
+  background-color: #282737 !important;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container .header-col {
+  background-color: white;
+  border-radius: 50px;
+}
+.header-container .header-col .nav-link {
+  color: #282737;
+  font-family: "Arial";
+  font-style: bold !important;
+  font-weight: 700;
+  font-size: 1vw;
+}
+.header-container .header-col .nav-link.title {
+  font-size: 2.4vw;
+}
+
+.body-container h1 {
+  font-family: "Audiowide";
+  font-weight: 600;
+  font-size: 10vw;
+  color: white;
+}
+.body-container h2 {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 2.5vw;
+  color: white;
+}
+.body-container h2 .t-title {
+  font-weight: 900;
+}
+.body-container h3 {
+  font-family: "Arial";
+  font-weight: 600;
+  font-size: 1.6vw;
+  color: white;
+}
+.body-container h3.bigger {
+  font-size: 2.5vw;
+}
+.body-container h4 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.6vw;
+  color: white;
+}
+.body-container h5 {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 1.6vw;
+  color: white;
+}
+.body-container p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.5vw;
+  color: white;
+}
+.body-container p.t-description {
+  font-family: "Arial";
+  font-weight: 300;
+  font-size: 1.2vw;
+}
+.body-container p.course-title {
+  font-family: "Arial";
+  font-size: 2vw;
+  font-weight: 700 !important;
+  margin-bottom: 2vh;
+}
+.body-container p.course-title.black {
+  color: black;
+}
+.body-container p.desc-title {
+  font-family: "Arial";
+  font-size: 1.6vw;
+  font-weight: 700 !important;
+  margin-bottom: 2vh;
+  color: black;
+}
+.body-container p.desc-main {
+  font-family: "Roboto";
+  font-size: 1vw;
+  font-weight: 500 !important;
+  margin-bottom: 2vh;
+  color: black;
+}
+.body-container p.course-description {
+  font-size: 1.2vw;
+  margin-bottom: 2vh;
+}
+.body-container p.smaller {
+  font-size: 0.8vw;
+}
+.body-container p.feedback {
+  font-size: 1.3vw;
+}
+.body-container .pricing-container {
+  background-color: white;
+  border-radius: 20px;
+  color: white;
+}
+.body-container .pricing-container .tariff {
+  color: black;
+}
+.body-container .pricing-container .tariff.title {
+  font-family: "Arial";
+  font-size: 1.6vw;
+  font-weight: 700 !important;
+  margin-bottom: 2vh;
+}
+.body-container .pricing-container .tariff.price {
+  font-family: "Arial";
+  font-size: 2.3vw;
+  font-weight: 700 !important;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.body-container .pricing-container .tariff.description {
+  font-family: "Roboto";
+  font-size: 1vw;
+  font-weight: 300 !important;
+  line-height: 2.5vh;
+  margin-bottom: 0.2vh;
+}
+.body-container .teacher-container .teacher-pic {
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}
+.body-container .teacher-container .teacher {
+  color: rgb(255, 255, 255);
+}
+.body-container .teacher-container .teacher.name {
+  font-family: "Arial";
+  font-size: 1.3vw;
+  font-weight: 700 !important;
+  margin-bottom: 2vh;
+}
+.body-container .teacher-container .teacher.occupation {
+  font-family: "Roboto";
+  font-size: 1vw;
+  font-weight: 300 !important;
+  margin-top: -2vh;
+  margin-bottom: 2vh;
+}
+.body-container .teacher-container .teacher.description {
+  font-family: "Roboto";
+  font-size: 1vw;
+  font-weight: 300 !important;
+  line-height: 2.5vh;
+  margin-bottom: 0.2vh;
+}
+.body-container .blog-container .blog-pic {
+  width: 350px;
+  height: 250px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50px;
+}
+.body-container .blog-container .blog {
+  color: rgb(255, 255, 255);
+}
+.body-container .blog-container .blog.title {
+  font-family: "Arial";
+  font-size: 1.3vw;
+  font-weight: 700 !important;
+  margin-bottom: 2vh;
+}
+.body-container .blog-container .blog.link {
+  font-family: "Roboto";
+  font-size: 1vw;
+  color: #ACFF00;
+  font-weight: 600 !important;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.body-container .blog-container .blog.link:hover {
+  color: #8155FF !important;
+}
+.body-container .blog-container .blog.description {
+  font-family: "Roboto";
+  font-size: 0.9vw;
+  font-weight: 300 !important;
+  line-height: 2vh;
+  margin-bottom: 0.2vh;
+}
+.body-container .table-container .icon {
+  width: 150%;
+}
+.body-container .table-container .title {
+  font-family: "Arial";
+  font-size: 1.2vw;
+  font-weight: 700 !important;
+}
+.body-container .table-container .description {
+  font-family: "Roboto";
+  font-size: 1vw;
+  font-weight: 300 !important;
+  line-height: 2.5vh;
+  margin-bottom: 0.2vh;
+}
+.body-container img.position-absolute {
+  width: 60vw;
+  height: auto;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.body-container .divider {
+  position: relative;
+  height: 1px;
+  width: 70%;
+  background-color: #ACFF00;
+  margin: 80px auto;
+}
+.body-container .divider-small {
+  height: 1px;
+  width: 50%;
+  background-color: #ACFF00;
+  margin: 20px 0;
+}
+.body-container .divider-small.purp {
+  margin-left: 15px;
+  width: 30%;
+  background-color: #8155FF;
+  height: 2px;
+}
+.body-container .contact-form label {
+  font-family: "Arial";
+  font-weight: 300;
+  font-size: 1.2vw;
+  line-height: 1.3em;
+  color: #FFFFFF;
+}
+.body-container .contact-form .form-control {
+  border-radius: 20px;
+  font-family: "Arial";
+  padding: 2%;
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 1.3em;
+  color: rgb(0, 0, 0);
+}
+.body-container .contact-form-index .form-control {
+  border-color: #ACFF00 !important;
+  background-color: #282737 !important;
+  border-radius: 20px;
+  font-family: "Arial";
+  padding: 2%;
+  font-weight: 500;
+  font-size: 0.9vw;
+  line-height: 1.3em;
+  color: rgb(255, 255, 255);
+}
+.body-container .form-check-input:checked {
+  border-radius: 100%;
+  background-color: #282737;
+}
+.body-container .form-check-input:checked:checked {
+  background-color: #ACFF00;
+  border-color: #ACFF00;
+}
+.body-container .form-check-label {
+  font-family: "Arial";
+  font-weight: 300;
+  font-size: 1.2vw;
+  line-height: 1.3em;
+  color: #FFFFFF;
+}
+.body-container .img-path {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.body-container .course-desc {
+  background-color: white !important;
+  border-radius: 30px;
+  margin-left: 2vw;
+  z-index: 6;
+}
+.body-container .course-img {
+  height: 350px;
+  width: 550px;
+  border-radius: 30px;
+  margin-left: -2vw;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer-container {
+  background-color: #1b1b25;
+}
+.footer-container .white-rect {
+  background-color: white !important;
+  border-radius: 50px;
+}
+.footer-container .nav-link {
+  color: #282737;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 0.9vw;
+}
+.footer-container p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 0.8vw;
+  color: rgb(204, 204, 204);
+}
+
+.carousel .carousel-indicators [data-bs-target] {
+  background-color: #c4ff00;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  background-size: 60% 60%;
+}
+
+.btn-primary {
+  background-color: #ACFF00 !important;
+  width: 80% !important;
+  height: 120px;
+  border-radius: 40px;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  outline: none !important;
+  border-color: rgba(0, 0, 0, 0);
+  color: black !important;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 2vw !important;
+  color: black;
+}
+.btn-primary:hover {
+  background-color: #8155FF !important;
+  color: white !important;
+}
+
+.btn-secondary {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #ACFF00 !important;
+  width: 50% !important;
+  height: 70px;
+  border-radius: 40px;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  outline: none !important;
+  border-color: rgba(0, 0, 0, 0);
+  color: black !important;
+  font-family: "Arial";
+  font-weight: 700;
+  font-size: 1.6vw !important;
+  color: black;
+}
+.btn-secondary:hover {
+  background-color: #8155FF !important;
+  color: white !important;
+}/*# sourceMappingURL=style.css.map */
